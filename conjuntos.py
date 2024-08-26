@@ -12,7 +12,7 @@ def calculando_operaçoes(l):
     resultados = []
     i = 1
 
-    for _ in range(qtddOperacoes):
+    for indice in range(qtddOperacoes):
         operacao = l[i].strip()
         conjunto1 = set(l[i + 1].strip().split(', '))
         conjunto2 = set(l[i + 2].strip().split(', '))
@@ -59,5 +59,5 @@ if __name__ == "__main__":
 
 #Arquivos no Diretório
     arquivosDiretorio = os.listdir()
-    print(f"\nArquivos no Diretório:\n{arquivosDiretorio}\n")
+    print(f"\nArquivos no Diretório:\n{arquivosDiretorio}\nEscolha o arquivo que deseja executar: ")
     main()  
